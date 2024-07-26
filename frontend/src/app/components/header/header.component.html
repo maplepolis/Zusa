@@ -1,0 +1,39 @@
+<div id="header">
+  <span class="title">
+    <a routerLink="">Zusa</a>
+  </span>
+
+  <div class="buttons">
+    <div
+      id="homeButton"
+      class="button"
+      title="Home page"
+      (click)="seeHome()"
+    ></div>
+    <a routerLink="/generate"
+      ><div
+        id="generateButton"
+        class="button"
+        title="Generate art with PDF"
+      ></div
+    ></a>
+    <div
+      id="profileButton"
+      class="button"
+      title="See my profile"
+      (click)="seeMyProfile()"
+    ></div>
+    <div
+      id="creditsButton"
+      class="button"
+      title="See credits"
+      (click)="seeCredits()"
+    ></div>
+    <div
+      id="logoutButton"
+      class="button"
+      title="Logout"
+      (click)="logout()"
+    ></div>
+  </div>
+</div>

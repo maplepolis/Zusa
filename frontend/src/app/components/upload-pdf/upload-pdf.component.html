@@ -1,0 +1,33 @@
+<form
+  [formGroup]="uploadPDFForm"
+  id="upload-pdf-form"
+  (ngSubmit)="uploadPDF($event)"
+>
+  <div class="bold">Title your Creation</div>
+  <input
+    type="text"
+    id="pdfTitle"
+    name="pdfTitle"
+    placeholder="Enter a title..."
+    formControlName="pdfTitle"
+  />
+
+  <div class="bold">Upload your Resume</div>
+  <input
+    type="file"
+    id="pdfFile"
+    name="pdfFile"
+    accept=".pdf"
+    required
+    formControlName="pdfFile"
+    (change)="onFileChange($event)"
+  />
+
+  <div class="bold">Choose Generation Type</div>
+  <div id="generateButtons">
+    <button type="submit" name="p5spiral" class="btn">
+      Interactive Spiral
+    </button>
+    <button type="submit" name="sd" class="btn">Stable Diffusion</button>
+  </div>
+</form>
