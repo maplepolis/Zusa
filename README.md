@@ -14,9 +14,9 @@ This application is front-end focused.
 
 ## Team Members
 
-- Terry Chin Long Wong - 1005153067
-- Simon Ha - 1004929116
-- Kai Lin - 1006903040
+- Terry Chin Long Wong
+- Simon Ha
+- Kai Lin
 
 ## Description
 
